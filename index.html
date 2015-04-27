@@ -13,8 +13,12 @@
     <input ng-model="userInput">
     <button ng-click="addWord(userInput)">add</button>
 
+    <div class="madlib-template">
+    "{{userInput}} went for a walk in the park. {{userInput}} found a  {{userInput}}. {{userInput}} decided to take it home."
+    </div>
+
     <ul>
-    <li ng-repeat="word in words track by $index"> {{ word }} </li>
+      <li ng-repeat="word in words track by $index"> {{ word }} </li>
     </ul>
   </div>
 

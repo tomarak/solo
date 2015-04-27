@@ -11,16 +11,16 @@
   <div class ="container" ng-controller="MadController">
   <div ng-view>
     <input ng-model="userInput">
-    <button ng-click="addWord(userInput); getSentence()">add</button>
+    <button ng-click="addWord(userInput)">add</button>
 
     <div class="currentSentence">
-      {{ currentSentence }}
+      {{userInput +" "+currentSentence }}
     </div>
 
     <div class="story" ng-repeat="sentence in story track by $index">
-     <ul>
-      <li>{{sentence}}</li>
-     </ul>
+     <p>
+      {{sentence}}
+     </p>
      </div>
     </div>
   </div>

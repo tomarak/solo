@@ -5,26 +5,28 @@ angular.module('app', [])
   $scope.template = ["went for a walk in the park. ", "decided to take it home."]
   $scope.story = [];
   $scope.count = 0;
-  $scope.currentSentence = $scope.getCurrentSentence();
 
   $scope.userSentence;
 
   $scope.addWord = function(word){
-    $scope.words.push(word);
-    $scope.currentSentence = $scope.template[$scope.count];
-    $scope.userSentence = $scope.userInput +" "+$scope.currentSentence;
+    //$scope.words.push(word);
+    $scope.userSentence = $scope.userInput +" "+ $scope.getCurrentStorySentence();
     $scope.addSentence($scope.userSentence);
+
+    $scope.count++;
     $scope.userInput = '';
+
+    console.log($scope.getcurrentStorySentence, $scope.template[$scope.count])
   }
 
-  $scope.getCurrentSentence = function(){
+  $scope.getCurrentStorySentence = function(){
     return $scope.template[$scope.count];
   }
 
   $scope.addSentence = function(sentence){
     //var index = Math.floor(Math.random()*$scope.template.length);
     $scope.story.push(sentence);
-    $scope.count++;
+   
   }
 
   $scope.getStory = function(){

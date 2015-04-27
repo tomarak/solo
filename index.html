@@ -8,18 +8,21 @@
   <script src="app.js"></script>
 </head>
 <body ng-app="app">
-  <div class ="words-container" ng-controller="MadController">
-
+  <div class ="container" ng-controller="MadController">
+  <div ng-view>
     <input ng-model="userInput">
-    <button ng-click="addWord(userInput)">add</button>
+    <button ng-click="addWord(userInput); getSentence()">add</button>
 
-    <div class="madlib-template">
-    "{{userInput}} went for a walk in the park. {{userInput}} found a  {{userInput}}. {{userInput}} decided to take it home."
+    <div class="currentSentence">
+      {{ currentSentence }}
     </div>
 
-    <ul>
-      <li ng-repeat="word in words track by $index"> {{ word }} </li>
-    </ul>
+    <div class="story" ng-repeat="sentence in story track by $index">
+     <ul>
+      <li>{{sentence}}</li>
+     </ul>
+     </div>
+    </div>
   </div>
 
 

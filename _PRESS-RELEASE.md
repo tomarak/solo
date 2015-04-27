@@ -18,27 +18,30 @@ Once the project moves into development, the press release can be used as a touc
  
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
+  >MAD LIBS WITH FRIENDS OR STRANGERS-LY
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  >MADLIBS IN REAL TIME! [EXCLAMATORY]!
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > IT'S A NOUN!
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > ARE YOU SOMEONE WHO VERBS THEIR NOUNS? HOW ABOUT ADVERBS THEIR VERBS? YOU SHOULD VERB THIS NOUN WITH YOUR PROPER NOUNS OR PRONOUNS. IT'S REALLY ADJECTIVE.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > IT CONNECTS NOUNS WITH OTHER NOUNS IN A CHATROOM LIKE INTERFACE THAT VERBS YOU TO ENTER IN ADJECTIVES OR NOUNS OR VERBS OR ADVERBS OR OTHER THINGS. DID I VERB THAT IT IS IN REAL TIME?
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
-
+  > "SUBJECT VERB ADJECTIVE OBJECT!"
+  > -PRONOUN
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > GO TO THE WEBSITE DUMMY
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "IT'S ADEQUATE!"
+  > -KURT BARTHOLOMEW
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > TRY IT PLZ

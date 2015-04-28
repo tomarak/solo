@@ -16,7 +16,7 @@
 
   <h2>Current Sentence</h2>
     <div class="currentSentence">
-      {{userInput +" "+ getCurrentStorySentence() }}
+      {{getCurrentStorySentence().replace("[input]", userInput)}}
     </div>
 
 <h2>The Story So Far</h2>

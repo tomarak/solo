@@ -3,7 +3,7 @@ angular.module('app', [])
 
 .controller('MadController', ['$scope', function($scope){
   $scope.words = [];
-  $scope.template = ["% went for a walk in the park. ", "There was % on the ground.", "% decided to take it home."]
+  $scope.template = ["% went for a walk in the park. ", "There was % on the ground.", "% decided to take it home.", "The % grew very large,", "So large that it was bigger than %"]
   $scope.story = [];
   $scope.count = 0;
 

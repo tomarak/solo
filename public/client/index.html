@@ -32,7 +32,7 @@
         </p>
       </div>
 
-      <button ng-repeat="answer in answers" ng-model = "userInput" ng-click="userInput = answer; addWord(userInput); getQuestion();" class="btn waves-effect waves-light" type="submit">{{answer}}</button>
+     <button ng-repeat="answer in currentAnswers track by $index" ng-model = "userInput" ng-click="userInput = answer; addWord(userInput); getQuestion()" class="waves-effect waves-light btn-large" type="submit">{{answer}}</button>
 
 
 

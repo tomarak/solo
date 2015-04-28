@@ -10,9 +10,9 @@ angular.module('app', [])
   "Cancel all my meetings. We've got a situation with % that requires my immediate attention.",
   "In his newest and most dangerous stunt, David Blaine must escape from %",
   "When the Pharoah remained unmoved, Moses called down a plague of %",
-  "Alternative medicine is now embracing the power of %"
+  "Alternative medicine is now embracing the power of %", "I'm sorry, there was nothing we could do. At 4:15 today your son succumbed to %", "In 1,000 years when our paper money is a distant memory, how will we pay for goods and services? %"
   ];
-  $scope.answers = ["Lollipops", "Gummy bears", "Sunshine", "Rainbows", "The color yellow", "Golden retrievers", "The glowing realization that all of us are connected in an abstract yet liminal way", "The Beatles", "Warmth", "Honeysuckles", "Being well rested", "a postive perspective on life", "fiscal responsibility"];
+  $scope.answers = ["Lollipops", "Gummy bears", "Sunshine", "Rainbows", "The color yellow", "Golden Retrievers", "The glowing realization that all of us are connected in an abstract yet liminal way", "The Beatles", "Warmth", "Honeysuckles", "Being well rested", "a postive perspective on life", "fiscal responsibility", "peach fuzz", "extreme frolicking", "cookies"];
   $scope.sentencesSoFar = [];
   $scope.count = 0;
 
@@ -51,9 +51,9 @@ angular.module('app', [])
   $scope.getAnswers = function(){
     var index;
     $scope.currentAnswers = [];
-    while($scope.currentAnswers.length !== 5){
+    while($scope.currentAnswers.length !== 6){
      index = Math.floor(Math.random() * $scope.answers.length);
-     if($scope.currentAnswers.indexOf($scope.answers[index] === -1)){
+     if($scope.currentAnswers.indexOf($scope.answers[index]) === -1){
        $scope.currentAnswers.push($scope.answers[index]);
      }
    }

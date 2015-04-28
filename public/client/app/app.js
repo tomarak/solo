@@ -1,8 +1,9 @@
 angular.module('app', [])
 
+
 .controller('MadController', ['$scope', function($scope){
   $scope.words = [];
-  $scope.template = ["[input] went for a walk in the park. ", "There was [input] on the ground.", "[input] decided to take it home."]
+  $scope.template = ["% went for a walk in the park. ", "There was % on the ground.", "% decided to take it home."]
   $scope.story = [];
   $scope.count = 0;
 
@@ -10,7 +11,7 @@ angular.module('app', [])
 
   $scope.addWord = function(word){
     //$scope.words.push(word);
-    $scope.userSentence = $scope.getCurrentStorySentence().replace("[input]", $scope.userInput);
+    $scope.userSentence = $scope.getCurrentStorySentence().replace("%", $scope.userInput);
     $scope.addSentence($scope.userSentence);
 
     $scope.count++;

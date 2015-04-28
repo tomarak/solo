@@ -2,6 +2,9 @@ angular.module('app', [])
 
 
 .controller('MadController', ['$scope', function($scope){
+
+  var index = Math.floor(Math.random()*$scope.template.length);
+
   $scope.words = [];
   $scope.template = ["% went for a walk in the park. ", "There was % on the ground.", "% decided to take it home.", "The % grew very large,", "So large that it was bigger than %"]
   $scope.story = [];
@@ -28,11 +31,15 @@ angular.module('app', [])
   $scope.addSentence = function(sentence){
     //var index = Math.floor(Math.random()*$scope.template.length);
     $scope.story.push(sentence);
-   
+
   }
 
   $scope.getStory = function(){
     return $scope.story.join("");
+  }
+
+  $scope.chooseTemplate = function(){
+    var index = Math.floor(Math.random()*$scope.template.length);
   }
 
 /*

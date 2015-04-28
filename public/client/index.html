@@ -18,22 +18,25 @@
   <script src="app/app.js"></script>
 </head>
 <body>
-  <div class ="container" ng-controller="MadController">
+  <div class ="container" ng-controller="mainController" ng-init="getQuestion(); getAnswers()">
+  <div id="counter">Rounds: {{count}}</div>
     <div ng-view>
-      <h2>Enter a word</h2>
-      <input ng-model="userInput" type="text" class="materialize-textarea" id="icon_prefix2">
-      <button ng-click="addWord(userInput)" class="btn waves-effect waves-light" type="submit">add</button>
 
-      <h2>Current Sentence</h2>
+      <!--input ng-model="userInput" type="text" class="materialize-textarea" id="icon_prefix2"-->
+    
+
       <div class="currentSentence">
         <p class="flow-text">
-        {{getCurrentStorySentence().replace("%", userInput)}}
+        {{getQuestion().replace("%", userInput)}}
         
         </p>
       </div>
 
-      <h2>The Story So Far</h2>
-      <div class="story" ng-repeat="sentence in story track by $index">
+      <button ng-repeat="answer in answers" ng-model = "userInput" ng-click="userInput = answer; addWord(userInput); getQuestion();" class="btn waves-effect waves-light" type="submit">{{answer}}</button>
+
+
+
+      <div class="user-answers" ng-repeat="sentence in sentencesSoFar track by $index">
        <p class="flow-text">
         {{sentence}}
       </p>

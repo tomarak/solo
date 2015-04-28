@@ -6,7 +6,7 @@ angular.module('app', [])
   "I drink to forget %", 
   "Next on ESPN2: The World Series of %", 
   "A LifeTime Original Picture: %", 
-  "I'm not going to lie, I despise %. There, I said it.", 
+  "I'm not going to lie, I love %. There, I said it.", 
   "Cancel all my meetings. We've got a situation with % that requires my immediate attention.",
   "In his newest and most dangerous stunt, David Blaine must escape from %",
   "When the Pharoah remained unmoved, Moses called down a plague of %",
@@ -44,6 +44,7 @@ angular.module('app', [])
     var index = Math.floor(Math.random() * $scope.questions.length);
 
     $scope.currentQuestion = $scope.questions[index];
+
     return $scope.currentQuestion;
 
   };

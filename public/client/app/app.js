@@ -10,9 +10,9 @@ angular.module('app', [])
   "Cancel all my meetings. We've got a situation with % that requires my immediate attention.",
   "In his newest and most dangerous stunt, David Blaine must escape from %",
   "When the Pharoah remained unmoved, Moses called down a plague of %",
-  "Alternative medicine is now embracing the power of %", "I'm sorry, there was nothing we could do. At 4:15 today your son succumbed to %", "In 1,000 years when our paper money is a distant memory, how will we pay for goods and services? %"
+  "Alternative medicine is now embracing the power of %", "I'm sorry, there was nothing we could do. At 4:15 today your son succumbed to %", "In 1,000 years when our paper money is a distant memory, how will we pay for goods and services? %", "When I am a billionaire, I shall erect a 50-foot statue to commemorate %", "He who controls % controls the world", "%! It's a trap!", "Anthropologists have recently discovered a primitive tribe that worships %"
   ];
-  $scope.answers = ["Lollipops", "Gummy bears", "Sunshine", "Rainbows", "The color yellow", "Golden Retrievers", "The glowing realization that all of us are connected in an abstract yet liminal way", "The Beatles", "Warmth", "Honeysuckles", "Being well rested", "a postive perspective on life", "fiscal responsibility", "peach fuzz", "extreme frolicking", "cookies"];
+  $scope.answers = ["Lollipops", "Gummy bears", "Sunshine", "Rainbows", "The color yellow", "Golden Retrievers", "The glowing realization that all of us are connected in an abstract yet liminal way", "The Beatles", "Warmth", "Honeysuckles", "Being well rested", "a postive perspective on life", "fiscal responsibility", "peach fuzz", "extreme frolicking", "cookies", "nutella", "dandelions in the wind", "the giggles of joyful children", "functional reactive programming", "the sun smudged peach moon", ];
   $scope.sentencesSoFar = [];
   $scope.count = 0;
 

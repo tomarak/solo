@@ -1,7 +1,6 @@
 angular.module('app', [])
 
 
-<<<<<<< HEAD
 .controller('mainController', ['$scope', function($scope){
   $scope.questions = ["What gets better with age? %", 
   "I drink to forget %", 
@@ -15,15 +14,6 @@ angular.module('app', [])
   ];
   $scope.answers = ["Lollipops", "Gummy bears", "Sunshine", "Rainbows", "The color yellow", "Golden Retrievers", "The glowing realization that all of us are connected in an abstract yet liminal way", "The Beatles", "Warmth", "Honeysuckles", "Being well rested", "a postive perspective on life", "fiscal responsibility", "peach fuzz", "extreme frolicking", "cookies", "nutella", "dandelions in the wind", "the giggles of joyful children", "functional reactive programming", "the sun smudged peach moon", ];
   $scope.sentencesSoFar = [];
-=======
-.controller('MadController', ['$scope', function($scope){
-
-  var index = Math.floor(Math.random()*$scope.template.length);
-
-  $scope.words = [];
-  $scope.template = ["% went for a walk in the park. ", "There was % on the ground.", "% decided to take it home.", "The % grew very large,", "So large that it was bigger than %"]
-  $scope.story = [];
->>>>>>> e97b67c7884cb5b4be752ec6b458a7150517b504
   $scope.count = 0;
 
   $scope.currentQuestion = "";
@@ -50,7 +40,6 @@ angular.module('app', [])
 
   //==========INITIALIZE=============
 
-<<<<<<< HEAD
   $scope.getQuestion = function(){
     var index = Math.floor(Math.random() * $scope.questions.length);
 
@@ -69,19 +58,8 @@ angular.module('app', [])
        $scope.currentAnswers.push($scope.answers[index]);
      }
    }
-=======
-  $scope.addSentence = function(sentence){
-    //var index = Math.floor(Math.random()*$scope.template.length);
-    $scope.story.push(sentence);
-
-  }
->>>>>>> e97b67c7884cb5b4be752ec6b458a7150517b504
 
  };
-
-  $scope.chooseTemplate = function(){
-    var index = Math.floor(Math.random()*$scope.template.length);
-  }
 
 /*
   $scope.$on('$viewContentLoaded', function(){
